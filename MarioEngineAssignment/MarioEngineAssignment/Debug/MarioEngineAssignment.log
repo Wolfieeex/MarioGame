@@ -1,3 +1,2 @@
 ﻿  MarioEngineAssignment.cpp
-C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\MarioEngineAssignment.cpp(110): warning C4715: 'InitSDL': not all control paths return a value
   MarioEngineAssignment.vcxproj -> C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\Debug\MarioEngineAssignment.exe
