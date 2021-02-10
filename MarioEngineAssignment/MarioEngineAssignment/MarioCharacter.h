@@ -1,0 +1,16 @@
+#pragma once
+#ifndef MARIOCHARACTER_H
+#define MARIOCHARACTER_H
+
+#include "Character.h"
+
+class MarioCharacter : public Character
+{
+public:
+	MarioCharacter(SDL_Renderer* renderer, std::string imagePath, Vector2D start_position);
+	~MarioCharacter();
+
+	void Update(float deltaTime, SDL_Event e) override;
+};
+
+#endif

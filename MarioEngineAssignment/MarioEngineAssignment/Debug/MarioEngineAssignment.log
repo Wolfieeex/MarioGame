@@ -1,2 +1,6 @@
-﻿  MarioEngineAssignment.cpp
+﻿  GameScreenLevel1.cpp
+  GameScreenManager.cpp
+  LuigiCharacter.cpp
+  MarioCharacter.cpp
+  Generating Code...
   MarioEngineAssignment.vcxproj -> C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\Debug\MarioEngineAssignment.exe
