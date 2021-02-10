@@ -2,6 +2,7 @@
 #include <SDL_image.h>
 #include <SDL_mixer.h>
 #include <iostream>
+#include <string>
 
 //Files included
 #include "Constants.h"
