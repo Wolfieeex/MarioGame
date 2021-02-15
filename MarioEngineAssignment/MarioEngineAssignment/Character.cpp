@@ -1,8 +1,9 @@
 #include "Character.h"
-#include "Texture2D.h"
 
 Character::Character(SDL_Renderer* renderer, std::string imagePath, Vector2D start_position)
 {
+	m_collision_radius = 15.0f;
+
 	m_moving_left = false;
 	m_moving_right = false;
 
@@ -70,6 +71,11 @@ void Character::Jump(float deltaTime)
 	//is jump force 0?
 	if (m_jump_force <= 0.0f)
 		m_jumping = false;
+}
+
+float Character::GetCollisionRadius()
+{
+	return m_collision_radius;
 }
 
 void Character::SetPosition(Vector2D new_position)

@@ -24,6 +24,35 @@ struct Vector2D
 	}
 };
 
+struct Rect2D
+{
+	float x;
+	float y;
+	float width;
+	float height;
+
+	Rect2D(float x_pos, float y_pos, float width, float height)
+	{
+		x = x_pos;
+		y = y_pos;
+		this->width = width;
+		this->height = height;
+	}
+};
+
+struct Circl2D
+{
+	float x;
+	float y;
+	float radius;
+	Circl2D(float x_pos, float y_pos, float radius)
+	{
+		x = x_pos;
+		y = y_pos;
+		this->radius = radius;
+	}
+};
+
 enum FACING
 {
 	FACING_LEFT,
