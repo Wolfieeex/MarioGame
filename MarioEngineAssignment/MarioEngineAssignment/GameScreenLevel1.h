@@ -10,6 +10,7 @@
 class Texture2D;
 class MarioCharacter;
 class LuigiCharacter;
+class LevelMap;
 
 class GameScreenLevel1 : GameScreen
 {
@@ -27,6 +28,9 @@ private:
 	LuigiCharacter* my_luigi_character;
 
 	bool SetUpLevel();
+
+	void SetLevelMap();
+	LevelMap* m_level_map;
 };
 
 

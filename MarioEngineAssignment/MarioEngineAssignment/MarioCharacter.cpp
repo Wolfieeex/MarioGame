@@ -1,8 +1,9 @@
 #include "MarioCharacter.h"
 #include "Texture2D.h"
 #include <string>
+#include "LevelMap.h"
 
-MarioCharacter::MarioCharacter(SDL_Renderer* renderer, std::string imagePath, Vector2D start_position) : Character(renderer, imagePath, start_position)
+MarioCharacter::MarioCharacter(SDL_Renderer* renderer, std::string imagePath, Vector2D start_position, LevelMap* map) : Character(renderer, imagePath, start_position, map)
 {
 
 }

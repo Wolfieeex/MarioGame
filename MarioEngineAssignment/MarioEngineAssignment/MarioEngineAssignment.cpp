@@ -36,7 +36,7 @@ int main(int argc, char* args[])
 	//check if sdl was setup correctly
 	if (InitSDL())
 	{
-		game_screen_manager = new GameScreenManager(g_renderer, SCREEN_INTRO);
+		game_screen_manager = new GameScreenManager(g_renderer, SCREEN_LEVEL1);
 		//set the time
 		g_old_time = SDL_GetTicks();
 
