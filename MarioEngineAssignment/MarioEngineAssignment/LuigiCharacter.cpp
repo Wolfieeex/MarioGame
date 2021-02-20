@@ -1,8 +1,9 @@
 #include "LuigiCharacter.h"
 #include "Texture2D.h"
 #include <string>
+#include "LevelMap.h"
 
-LuigiCharacter::LuigiCharacter(SDL_Renderer* renderer, std::string imagePath, Vector2D start_position) : Character(renderer, imagePath, start_position)
+LuigiCharacter::LuigiCharacter(SDL_Renderer* renderer, std::string imagePath, Vector2D start_position, LevelMap* map) : Character(renderer, imagePath, start_position, map)
 {
 
 }

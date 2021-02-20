@@ -8,12 +8,15 @@
 #include <SDL.h>
 #include "Texture2D.h"
 
+
 class Texture2D;
+class LevelMap;
 
 class Character
 {
 private:
 	FACING m_facing_direction;
+	LevelMap* m_current_level_map;
 	
 protected:
 	float m_collision_radius;
@@ -33,7 +36,8 @@ protected:
 	Texture2D* m_texture;
 
 public:
-	Character(SDL_Renderer* renderer, std::string imagePath, Vector2D start_position);
+
+	Character(SDL_Renderer* renderer, std::string imagePath, Vector2D start_position, LevelMap* map);
 	~Character();
 
 	virtual void Render();
