@@ -40,6 +40,9 @@ public:
 	Character(SDL_Renderer* renderer, std::string imagePath, Vector2D start_position, LevelMap* map);
 	~Character();
 
+	bool IsJumping() { return m_jumping; }
+	void CancelJump() { m_jumping = false; }
+
 	virtual void Render();
 	virtual void Update(float deltaTime, SDL_Event e);
 	void SetPosition(Vector2D new_position);

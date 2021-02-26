@@ -151,6 +151,7 @@
     <ClCompile Include="LuigiCharacter.cpp" />
     <ClCompile Include="MarioCharacter.cpp" />
     <ClCompile Include="MarioEngineAssignment.cpp" />
+    <ClCompile Include="PowBlock.cpp" />
     <ClCompile Include="Texture2D.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +172,7 @@
     <ClInclude Include="LevelMap.h" />
     <ClInclude Include="LuigiCharacter.h" />
     <ClInclude Include="MarioCharacter.h" />
+    <ClInclude Include="PowBlock.h" />
     <ClInclude Include="Texture2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
