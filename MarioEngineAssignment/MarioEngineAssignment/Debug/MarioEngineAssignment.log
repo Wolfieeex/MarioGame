@@ -1,15 +1,45 @@
 ﻿  Character.cpp
-C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(55,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(55,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(58,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(58,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Collisions.cpp
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(58,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(58,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  GameScreenIntro.cpp
   GameScreenLevel1.cpp
-C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(55,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(55,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(58,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(58,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  GameScreenManager.cpp
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(58,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(58,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   LevelMap.cpp
   LuigiCharacter.cpp
-C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(55,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(55,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(58,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(58,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   MarioCharacter.cpp
-C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(55,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(55,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(58,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Character.h(58,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  MarioEngineAssignment.cpp
+  PowBlock.cpp
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(16,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(17,42): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(35,38): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(35,38): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(35,61): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(35,61): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(35,80): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(35,80): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(36,30): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(36,30): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(36,44): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(36,44): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(36,48): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(36,48): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(36,67): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\PowBlock.cpp(36,67): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Texture2D.cpp
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Texture2D.cpp(69,41): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Texture2D.cpp(69,41): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Texture2D.cpp(69,57): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\MarioEngineAssignment\Texture2D.cpp(69,57): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   Generating Code...
   MarioEngineAssignment.vcxproj -> C:\Users\aleks\Desktop\Mario Game\MarioGame\MarioEngineAssignment\Debug\MarioEngineAssignment.exe
