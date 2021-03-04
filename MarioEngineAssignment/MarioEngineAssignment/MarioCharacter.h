@@ -12,6 +12,10 @@ public:
 	~MarioCharacter();
 
 	void Update(float deltaTime, SDL_Event e) override;
+	void AddPoints();
+
+private:
+	unsigned int m_points;
 };
 
 #endif

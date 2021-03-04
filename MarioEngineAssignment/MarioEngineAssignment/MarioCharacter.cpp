@@ -5,7 +5,7 @@
 
 MarioCharacter::MarioCharacter(SDL_Renderer* renderer, std::string imagePath, Vector2D start_position, LevelMap* map) : Character(renderer, imagePath, start_position, map)
 {
-
+	m_points = 0;
 }
 
 MarioCharacter::~MarioCharacter()
@@ -50,4 +50,9 @@ void MarioCharacter::Update(float deltaTime, SDL_Event e)
 
 	Character::Update(deltaTime, e);
 
+}
+
+void MarioCharacter::AddPoints()
+{
+	m_points++;
 }
