@@ -14,11 +14,9 @@ class LevelMap;
 
 class Character
 {
-private:
-	FACING m_facing_direction;
-	LevelMap* m_current_level_map;
-	
 protected:
+	bool m_alive;
+
 	float m_collision_radius;
 
 	bool m_jumping;
@@ -31,9 +29,11 @@ protected:
 	virtual void MoveLeft(float deltaTime);
 	virtual void MoveRight(float deltaTime);
 
+	LevelMap* m_current_level_map;
 	SDL_Renderer* m_renderer;
 	Vector2D m_position;
 	Texture2D* m_texture;
+	FACING m_facing_direction;
 
 public:
 
@@ -42,6 +42,8 @@ public:
 
 	bool IsJumping() { return m_jumping; }
 	void CancelJump() { m_jumping = false; }
+	bool IsInAir() { return  !m_can_jump; }
+	float GetJumingForce() { return m_jump_force; }
 
 	virtual void Render();
 	virtual void Update(float deltaTime, SDL_Event e);
@@ -51,14 +53,18 @@ public:
 	virtual void AddGravity(float deltaTime);
 	virtual void Jump(float deltaTime);
 
+	void SetAlive(bool isAlive);
+	void EnemyJump(float deltatime, float jumpForce);
+	bool GetAlive() { return m_alive; }
+
 	float GetCollisionRadius();
 
-	Rect2D GetCollisionBox() 
+	Rect2D GetCollisionBox()
 	{
 		return Rect2D(m_position.x, m_position.y, m_texture->GetWidth(), m_texture->GetHeight());
 	}
 
-	Circl2D GetCollisionCircle()
+	virtual Circl2D GetCollisionCircle()
 	{
 		return Circl2D(m_position.x, m_position.y, m_collision_radius);
 	}

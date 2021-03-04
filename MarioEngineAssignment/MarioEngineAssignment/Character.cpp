@@ -1,8 +1,10 @@
+
 #include "Character.h"
 #include "LevelMap.h"
 
 Character::Character(SDL_Renderer* renderer, std::string imagePath, Vector2D start_position, LevelMap* map)
 {
+	m_alive = true;
 	m_collision_radius = 15.0f;
 
 	m_moving_left = false;
@@ -65,11 +67,11 @@ void Character::Update(float deltaTime, SDL_Event e)
 	}
 
 
-	if (m_moving_left)
+	if (m_moving_left && m_position.x > 0)
 	{
 		MoveLeft(deltaTime);
 	}
-	else if (m_moving_right)
+	else if (m_moving_right && m_position.x < SCREEN_WIDTH - 34)
 	{
 		MoveRight(deltaTime);
 	}
@@ -86,6 +88,18 @@ void Character::Jump(float deltaTime)
 	//is jump force 0?
 	if (m_jump_force <= 0.0f)
 		m_jumping = false;
+}
+
+void Character::SetAlive(bool isAlive)
+{
+	m_alive = isAlive;
+}
+
+void Character::EnemyJump(float deltatime, float jumpForce)
+{
+	m_jump_force = jumpForce;
+	m_jumping = true;
+	Jump(deltatime);
 }
 
 float Character::GetCollisionRadius()
