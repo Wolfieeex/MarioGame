@@ -8,6 +8,7 @@
 #include "CharacterCoin.h"
 #include "CharacterGoomba.h"
 #include <ctime>
+#include "SoundEffect.h"
 
 using namespace std;
 
@@ -34,6 +35,11 @@ GameScreenLevel1::~GameScreenLevel1()
 	m_enemies.clear();
 	m_coins.clear();
 	m_enemies_goomba.clear();
+
+	delete m_sound_beep; 
+	delete m_sound_click;
+	m_sound_beep = nullptr;
+	m_sound_click = nullptr;
 }
 
 void GameScreenLevel1::Render()
@@ -149,6 +155,7 @@ void GameScreenLevel1::UpdateEnemies(float deltaTime, SDL_Event e)
 					if (my_mario_character->IsInAir())
 					{
 						my_mario_character->EnemyJump(deltaTime, INITIAL_JUMP_FORCE_ENEMY);
+						m_sound_click->Play();
 						m_enemies[i]->TakeDamage();
 					}
 					else
@@ -195,6 +202,7 @@ void GameScreenLevel1::UpdateEnemies(float deltaTime, SDL_Event e)
 					if (my_mario_character->IsInAir())
 					{
 						my_mario_character->EnemyJump(deltaTime, INITIAL_JUMP_FORCE_ENEMY);
+						m_sound_click->Play();
 						m_enemies_goomba[i]->TakeDamage();
 					}
 					else
@@ -238,6 +246,7 @@ void GameScreenLevel1::UpdateCoins(float deltaTime, SDL_Event e)
 
 			if (m_coins[i]->GetCollected())
 			{
+				m_sound_beep->Play();
 				coinIndexToDelete = i;
 			}
 		}
@@ -297,6 +306,9 @@ bool GameScreenLevel1::SetUpLevel()
 		m_pow_block = new PowBlock(m_renderer, m_level_map);
 		m_screenshake = false;
 		m_background_yPos = 0.0f;
+
+		m_sound_beep = new SoundEffect("Music/Beep.wav");
+		m_sound_click = new SoundEffect("Music/Click.wav");
 
 		return true;
 	}

@@ -17,6 +17,7 @@ class LevelMap;
 class CharacterKoopa;
 class CharacterCoin;
 class CharacterGoomba;
+class SoundEffect;
 
 class GameScreenLevel1 : GameScreen
 {
@@ -50,6 +51,9 @@ private:
 	Texture2D* m_background_texture;
 	MarioCharacter* my_mario_character;
 	LuigiCharacter* my_luigi_character;
+
+	SoundEffect* m_sound_beep;
+	SoundEffect* m_sound_click;
 
 	bool SetUpLevel();
 	void DoScreenShake();

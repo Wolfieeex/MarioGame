@@ -7,6 +7,7 @@
 class CharacterCoin : public Character
 {
 private:
+
 	float m_movement_speed;
 	float m_single_sprite_w;
 	float m_single_sprite_h;
@@ -16,7 +17,7 @@ private:
 
 public:
 	CharacterCoin(SDL_Renderer* renderer, std::string imagePath, LevelMap* map, Vector2D start_position);
-	~CharacterCoin() {};
+	~CharacterCoin() {}
 
 	void Render() override;
 	void Update(float deltaTime, SDL_Event e) override;
