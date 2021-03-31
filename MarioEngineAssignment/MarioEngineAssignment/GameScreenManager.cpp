@@ -24,21 +24,13 @@ void GameScreenManager::Render()
 
 void GameScreenManager::Update(float deltaTime, SDL_Event e)
 {
-	/*m_score = m_current_screen->ReturnScore();
-	std::cout << *m_score;
-	if (m_score != nullptr)
+	m_score = m_current_screen->ReturnScore();
+
+	if (m_score >= 7)
 	{
-		std::cout << "It's ok";
-		if (*m_score >= 7)
-		{
-			ChangeScreen(SCREEN_LEVEL2);
-		}
+		ChangeScreen(SCREEN_LEVEL2);
 	}
-	else
-	{
-		std::cout << "It's not ok";
-	}
-	std::cout << "It's not ok";*/
+
 	m_current_screen->Update(deltaTime, e);
 }
 
