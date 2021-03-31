@@ -12,10 +12,10 @@ class Texture2D;
 class PowBlock
 {
 public:
-	PowBlock(SDL_Renderer* renderer, LevelMap* levelMap);
+	PowBlock(SDL_Renderer* renderer, LevelMap* levelMap, int height);
 	~PowBlock();
 	void Render();
-	void TakeHit();
+	void TakeHit(int row);
 	bool IsAvailable() { return m_num_hits_left > 0; }
 	Rect2D GetCollisionBox() { return Rect2D(m_position.x, m_position.y, m_single_sprite_w, m_single_sprite_h); }
 

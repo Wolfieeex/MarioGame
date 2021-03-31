@@ -6,6 +6,7 @@
 #include "GameScreen.h"
 #include "MarioCharacter.h"
 #include "LuigiCharacter.h"
+#include "GameScreenManager.h"
 #include <vector>
 
 
@@ -31,6 +32,12 @@ public:
 
 	void UpdatePOWBlock();
 
+	//unsigned int* ReturnScore() override { my_mario_character->GetPoints(); }
+
+protected:
+	virtual void SetLevelMap();
+	virtual bool SetUpLevel();
+
 private:
 	void UpdateEnemies(float deltaTime, SDL_Event e);
 	void UpdateCoins(float deltaTime, SDL_Event e);
@@ -55,15 +62,11 @@ private:
 	SoundEffect* m_sound_beep;
 	SoundEffect* m_sound_click;
 
-	bool SetUpLevel();
 	void DoScreenShake();
-	void SetLevelMap();
 
 	LevelMap* m_level_map;
 
 	PowBlock* m_pow_block;
 };
-
-
 
 #endif

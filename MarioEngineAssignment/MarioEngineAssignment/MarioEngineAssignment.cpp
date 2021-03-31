@@ -177,7 +177,7 @@ bool Update()
 			return false;
 			break;
 		case SDLK_z:
-			game_screen_manager->ChangeScreen(SCREEN_LEVEL1);
+			game_screen_manager->ChangeScreen(SCREEN_LEVEL2);
 			return false;
 			break;
 		case SDLK_0:

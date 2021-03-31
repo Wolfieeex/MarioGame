@@ -20,7 +20,6 @@
 #define WALKING_ANIMATION_COOLDOWN 0.5F;
 #define GOOMBA_SPEED 40.0f
 
-
 struct Vector2D
 {
 	float x;

@@ -125,7 +125,7 @@ void GameScreenLevel1::UpdatePOWBlock()
 			if (my_mario_character->IsJumping())
 			{
 				DoScreenShake();
-				m_pow_block->TakeHit();
+				m_pow_block->TakeHit(8);
 				my_mario_character->CancelJump();
 			}
 
@@ -298,12 +298,16 @@ bool GameScreenLevel1::SetUpLevel()
 		CreateCoin(Vector2D(250, 120));
 		CreateCoin(Vector2D(137, 120));
 		CreateCoin(Vector2D(360, 120));
+		CreateCoin(Vector2D(390, 30));
+		CreateCoin(Vector2D(107, 30));
+		CreateCoin(Vector2D(420, 250));
+		CreateCoin(Vector2D(77, 250));
 
 		//set up player character
 		my_mario_character = new MarioCharacter(m_renderer, "Images/Mario.png", Vector2D(64, 332), m_level_map);
 		my_luigi_character = new LuigiCharacter(m_renderer, "Images/Luigi.png", Vector2D(300, 332), m_level_map);
 
-		m_pow_block = new PowBlock(m_renderer, m_level_map);
+		m_pow_block = new PowBlock(m_renderer, m_level_map, 260);
 		m_screenshake = false;
 		m_background_yPos = 0.0f;
 

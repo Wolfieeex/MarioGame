@@ -13,6 +13,7 @@ class GameScreenManager
 private:
 	SDL_Renderer* m_renderer;
 	GameScreen* m_current_screen;
+	unsigned int* m_score;
 
 public:
 	GameScreenManager(SDL_Renderer* renderer, SCREENS startScreen);
@@ -23,6 +24,7 @@ public:
 
 	void ChangeScreen(SCREENS new_screen);
 
+	GameScreen* ReturnScreen() { return m_current_screen; }
 };
 
 #endif
