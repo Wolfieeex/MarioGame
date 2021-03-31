@@ -8,7 +8,7 @@
 #include "CharacterCoin.h"
 #include "CharacterGoomba.h"
 #include <ctime>
-#include "SoundEffect.h"
+#include "Sound.h"
 
 using namespace std;
 
@@ -308,10 +308,14 @@ bool GameScreenLevel2::SetUpLevel()
 		CreateGoomba(Vector2D(325, 200), KOOPA_SPEED);
 		CreateGoomba(Vector2D(230, 100), KOOPA_SPEED);
 
-		CreateCoin(Vector2D(250, 120));
-		CreateCoin(Vector2D(137, 120));
-		CreateCoin(Vector2D(360, 120));
-
+		CreateCoin(Vector2D(155, 25));
+		CreateCoin(Vector2D(345, 25));
+		CreateCoin(Vector2D(25, 90));
+		CreateCoin(Vector2D(475, 90));
+		CreateCoin(Vector2D(155, 180));
+		CreateCoin(Vector2D(345, 180));
+		CreateCoin(Vector2D(25, 270));
+		CreateCoin(Vector2D(475, 270));
 
 		//set up player character
 		my_mario_character = new MarioCharacter(m_renderer, "Images/Mario.png", Vector2D(64, 332), m_level_map);
@@ -321,8 +325,8 @@ bool GameScreenLevel2::SetUpLevel()
 		m_screenshake = false;
 		m_background_yPos = 0.0f;
 
-		m_sound_beep = new SoundEffect("Music/Beep.wav");
-		m_sound_click = new SoundEffect("Music/Click.wav");
+		m_sound_beep = new Sound("Music/Beep.wav");
+		m_sound_click = new Sound("Music/Click.wav");
 
 		return true;
 	}

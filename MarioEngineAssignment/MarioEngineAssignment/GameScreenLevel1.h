@@ -18,7 +18,7 @@ class LevelMap;
 class CharacterKoopa;
 class CharacterCoin;
 class CharacterGoomba;
-class SoundEffect;
+class Sound;
 
 class GameScreenLevel1 : GameScreen
 {
@@ -32,7 +32,7 @@ public:
 
 	void UpdatePOWBlock();
 
-	//unsigned int* ReturnScore() override { my_mario_character->GetPoints(); }
+	int ReturnScore() override;
 
 protected:
 	virtual void SetLevelMap();
@@ -59,8 +59,8 @@ private:
 	MarioCharacter* my_mario_character;
 	LuigiCharacter* my_luigi_character;
 
-	SoundEffect* m_sound_beep;
-	SoundEffect* m_sound_click;
+	Sound* m_sound_beep;
+	Sound* m_sound_click;
 
 	void DoScreenShake();
 

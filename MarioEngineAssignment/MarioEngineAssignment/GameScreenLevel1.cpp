@@ -8,7 +8,7 @@
 #include "CharacterCoin.h"
 #include "CharacterGoomba.h"
 #include <ctime>
-#include "SoundEffect.h"
+#include "Sound.h"
 
 using namespace std;
 
@@ -131,6 +131,11 @@ void GameScreenLevel1::UpdatePOWBlock()
 
 		}
 	}
+}
+
+int GameScreenLevel1::ReturnScore()
+{
+	return my_mario_character->GetPoints();
 }
 
 void GameScreenLevel1::UpdateEnemies(float deltaTime, SDL_Event e)
@@ -311,8 +316,8 @@ bool GameScreenLevel1::SetUpLevel()
 		m_screenshake = false;
 		m_background_yPos = 0.0f;
 
-		m_sound_beep = new SoundEffect("Music/Beep.wav");
-		m_sound_click = new SoundEffect("Music/Click.wav");
+		m_sound_beep = new Sound("Music/Beep.wav");
+		m_sound_click = new Sound("Music/Click.wav");
 
 		return true;
 	}

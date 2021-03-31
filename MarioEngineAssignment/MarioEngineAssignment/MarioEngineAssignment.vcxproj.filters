@@ -60,13 +60,10 @@
     <ClCompile Include="CharacterGoomba.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SoundEffect.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GameScreenLevel2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AccessManagers.cpp">
+    <ClCompile Include="Sound.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -133,10 +130,10 @@
     <ClInclude Include="CharacterGoomba.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SoundEffect.h">
+    <ClInclude Include="GameScreenLevel2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameScreenLevel2.h">
+    <ClInclude Include="Sound.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
