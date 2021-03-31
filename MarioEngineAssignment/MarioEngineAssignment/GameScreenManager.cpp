@@ -1,6 +1,6 @@
-#include "GameScreenManager.h"
 #include "GameScreen.h"
 #include "GameScreenLevel1.h"
+#include "GameScreenLevel2.h"
 #include "GameScreenIntro.h"
 
 GameScreenManager::GameScreenManager(SDL_Renderer* renderer, SCREENS startScreen)
@@ -24,6 +24,21 @@ void GameScreenManager::Render()
 
 void GameScreenManager::Update(float deltaTime, SDL_Event e)
 {
+	/*m_score = m_current_screen->ReturnScore();
+	std::cout << *m_score;
+	if (m_score != nullptr)
+	{
+		std::cout << "It's ok";
+		if (*m_score >= 7)
+		{
+			ChangeScreen(SCREEN_LEVEL2);
+		}
+	}
+	else
+	{
+		std::cout << "It's not ok";
+	}
+	std::cout << "It's not ok";*/
 	m_current_screen->Update(deltaTime, e);
 }
 
@@ -36,6 +51,7 @@ void GameScreenManager::ChangeScreen(SCREENS new_screen)
 	}
 
 	GameScreenLevel1* tempScreenLevel1;
+	GameScreenLevel2* tempScreenLevel2;
 	GameScreenIntro* tempScreenIntro;
 
 	switch (new_screen)
@@ -50,6 +66,10 @@ void GameScreenManager::ChangeScreen(SCREENS new_screen)
 		m_current_screen = (GameScreen*)tempScreenIntro;
 		tempScreenIntro = nullptr;
 		break;
+	case SCREEN_LEVEL2:
+		tempScreenLevel2 = new GameScreenLevel2(m_renderer);
+		m_current_screen = (GameScreen*)tempScreenLevel2;
+		tempScreenLevel2 = nullptr;
 	default:;
 	}
 

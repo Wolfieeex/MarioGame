@@ -13,9 +13,10 @@ public:
 
 	void Update(float deltaTime, SDL_Event e) override;
 	void AddPoints();
+	unsigned int* GetPoints() { return m_points; }
 
 private:
-	unsigned int m_points;
+	unsigned int* m_points;
 };
 
 #endif

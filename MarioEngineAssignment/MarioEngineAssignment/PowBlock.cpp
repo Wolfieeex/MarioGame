@@ -2,7 +2,7 @@
 #include "Texture2D.h"
 #include "LevelMap.h"
 
-PowBlock::PowBlock(SDL_Renderer* renderer, LevelMap* map)
+PowBlock::PowBlock(SDL_Renderer* renderer, LevelMap* map, int height)
 {
 	std::string imagePath = "Images/PowBlock.png";
 	m_texture = new Texture2D(renderer);
@@ -16,7 +16,7 @@ PowBlock::PowBlock(SDL_Renderer* renderer, LevelMap* map)
 	m_single_sprite_w = m_texture->GetWidth() / 3; //there are three images in this sprite sheet in a row
 	m_single_sprite_h = m_texture->GetHeight();
 	m_num_hits_left = 3;
-	m_position = Vector2D((SCREEN_WIDTH * 0.5f) - m_single_sprite_w * 0.5f, 260);
+	m_position = Vector2D((SCREEN_WIDTH * 0.5f) - m_single_sprite_w * 0.5f, height);
 
 }
 
@@ -38,13 +38,13 @@ void PowBlock::Render()
 	}
 }
 
-void PowBlock::TakeHit()
+void PowBlock::TakeHit(int row)
 {
 	m_num_hits_left--;
 	if (m_num_hits_left <= 0)
 	{
 		m_num_hits_left = 0;
-		m_level_map->ChangeTileAt(8, 7, 0);
-		m_level_map->ChangeTileAt(8, 8, 0);
+		m_level_map->ChangeTileAt(row, 7, 0);
+		m_level_map->ChangeTileAt(row, 8, 0);
 	}
 }
